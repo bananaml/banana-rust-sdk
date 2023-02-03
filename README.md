@@ -8,8 +8,12 @@ Get your API Key
 -   [Sign in / log in here](https://app.banana.dev/)
 
 ### Simple example
-Note that since models depends on your model, the Banana SDK cannot type check that you model input is correct. The `banana_rust_sdk::run()` takes any valid json (`serde_json::value`) as model input. Below is a more elaborate example with type checking. 
-```
+
+Both examples are based on calling a model link in [this template](https://github.com/bananaml/serverless-template).
+
+Note that since models depends on your model, the Banana SDK cannot type check that you model input is correct. The `banana_rust_sdk::run()` takes any valid json (`serde_json::value`) as model input. Below is a more elaborate example with type checking.
+
+```rust
 use banana_rust_sdk;
 use serde::Serialize;
 
@@ -33,8 +37,9 @@ async fn main() {
     println!("{:?}", json);
 }
 ```
+
 ### Example with type checking on the input
-```
+```rust
 use banana_rust_sdk;
 use serde::Serialize;
 use serde::Deserialize;
