@@ -1,6 +1,7 @@
 [package]
 name = "banana-rust-sdk"
 version = "0.1.0"
+license = "Apache-2.0"
 edition = "2021"
 authors = ["Erik <erikk@banana.dev>"]
 description = "Simple async SDK to call the banana.dev services"
